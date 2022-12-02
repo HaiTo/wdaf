@@ -11,8 +11,8 @@ RUN apt-get update && \
 COPY . .
 
 RUN yarn install
-
-RUN yarn workspace discovery-search-app run build
+RUN cp examples/discovery-search-app/.env examples/discovery-search-app/.env.local
+# RUN yarn workspace discovery-search-app run build
 
 EXPOSE 4000
 #RUN yarn run server:setup
