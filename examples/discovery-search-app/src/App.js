@@ -55,8 +55,8 @@ const App = () => {
           result: { projects }
         } = await searchClient.listProjects();
         const projectId =
-          projects.find(project => project.name === process.env.SPECIFIED_PROJECT_NAME)?.project_id ||
-          projects[0]?.project_id;
+          projects.find(project => project.name === process.env.SPECIFIED_PROJECT_NAME)
+            ?.project_id || projects[0]?.project_id;
         if (projectId) {
           setProjectId(projectId);
         } else {
