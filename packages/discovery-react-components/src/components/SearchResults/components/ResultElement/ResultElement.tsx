@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import { SelectedResult } from 'components/DiscoverySearch/DiscoverySearch';
-import { Button, Tile } from 'carbon-components-react';
+import { Button, CodeSnippet, Tile } from 'carbon-components-react';
 import { Launch16 } from '@carbon/icons-react';
 import { TableSplit16 } from '@carbon/icons-react';
 import DOMPurify from 'dompurify';
@@ -50,6 +50,7 @@ export interface ResultElementProps {
    * label used to describe the element
    */
   elementLabel?: string;
+  answerText: string;
 }
 
 export const ResultElement: React.FunctionComponent<ResultElementProps> = ({
@@ -61,7 +62,8 @@ export const ResultElement: React.FunctionComponent<ResultElementProps> = ({
   handleSelectResult,
   passageTextClassName,
   hasResult,
-  dangerouslyRenderHtml
+  dangerouslyRenderHtml,
+  answerText
 }) => {
   const elementBodyClassNames: string[] = [searchResultContentWrapperBodyClass];
   if (elementType) {
@@ -106,6 +108,7 @@ export const ResultElement: React.FunctionComponent<ResultElementProps> = ({
       ) : (
         <div {...elementBodyProps}>{body}</div>
       )}
+      {answerText && <CodeSnippet type="inline">Answer: {answerText}</CodeSnippet>}
       <Button
         className={searchResultContentWrapperBodyButtonClass}
         onClick={handleSelectResult(element, elementType)}

@@ -175,6 +175,7 @@ export const Result: React.FunctionComponent<ResultProps> = ({
             body={messages.emptyResultContentBodyText!}
             handleSelectResult={handleSelectResult}
             hasResult={!!result}
+            answerText=""
           />
         ) : (
           <>
@@ -182,6 +183,7 @@ export const Result: React.FunctionComponent<ResultProps> = ({
               !showTablesOnlyResults &&
               displayedTexts.map((displayedText, index) => {
                 const displayedTextElement = displayedTextElements?.[index];
+                const answerText = displayedTextElement?.answers?.[0].answer_text || '';
                 return (
                   <ResultElement
                     key={md5(displayedText + index)}
@@ -193,6 +195,7 @@ export const Result: React.FunctionComponent<ResultProps> = ({
                     passageTextClassName={passageTextClassName}
                     hasResult={!!result}
                     dangerouslyRenderHtml={shouldDangerouslyRenderHtml}
+                    answerText={answerText}
                   />
                 );
               })}
@@ -214,6 +217,7 @@ export const Result: React.FunctionComponent<ResultProps> = ({
                       ).join('')
                     : undefined
                 }
+                answerText=""
               />
             )}
           </>

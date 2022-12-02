@@ -55,7 +55,7 @@ const App = () => {
           result: { projects }
         } = await searchClient.listProjects();
         const projectId =
-          projects.find(project => project.name === 'Sample Project')?.project_id ||
+          projects.find(project => project.name === process.env.SPECIFIED_PROJECT_NAME)?.project_id ||
           projects[0]?.project_id;
         if (projectId) {
           setProjectId(projectId);
@@ -90,6 +90,17 @@ const App = () => {
       searchClient={searchClient}
       projectId={projectId}
       documentProvider={new ExampleDocumentProvider()}
+      overrideQueryParameters={{
+        passages: {
+          enabled: true,
+          max_per_document: 3,
+          characters: 200,
+          fields: ['title', 'text'],
+          find_answers: true,
+          max_answers_per_document: 1
+        },
+        _return: ['document_passages', 'extracted_metadata']
+      }}
     >
       <AppView />
     </DiscoverySearch>
@@ -111,7 +122,7 @@ function SearchPage() {
   return (
     <main className="root">
       <div className={`${settings.prefix}--search-app__nav-toolbar`}>
-        <p>Discovery React Components Example Search App</p>
+        <p>Discovery Answer Finding Sample Demo</p>
       </div>
       <div className={`${settings.prefix}--search-app__top-container ${settings.prefix}--grid`}>
         <div className={`${settings.prefix}--row`}>
