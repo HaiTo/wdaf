@@ -28,7 +28,7 @@ const App = () => {
   const searchClient = useMemo(() => {
     // Tell SDK to send requests to our server's `/api` endpoint, where
     // we will add authentication header.
-    const serviceUrl = urljoin(window.location.href, 'api');
+    const serviceUrl = urljoin(window.location.origin, 'api');
     // Client-side authentication is not supported. See `setupProxy.js` for
     // the server-side code to add authentication header.
     const authenticator = new NoAuthAuthenticator();
@@ -48,16 +48,15 @@ const App = () => {
     setProjectId('cypress');
   }
 
+  const pid = new URLSearchParams(window.location.search).get('project_id');
+
   useEffect(() => {
     async function fetchProjects() {
       try {
         const {
           result: { projects }
         } = await searchClient.listProjects();
-        const projectId = projects.find(
-          project =>
-            project.project_id == new URLSearchParams(window.location.search).get('project_id')
-        )?.project_id;
+        const projectId = projects.find(project => project.project_id == pid)?.project_id;
         if (projectId) {
           setProjectId(projectId);
         } else {
