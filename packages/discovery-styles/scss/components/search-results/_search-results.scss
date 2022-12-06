@@ -103,7 +103,7 @@ $result-table-fade-offset: calc(#{$result-element-max-height} - #{$result-table-
   @include type-style('body-long-01');
 
   flex-grow: 2;
-  max-height: $result-element-max-height;
+  max-height: fit-content;
   overflow: hidden;
   padding-right: $spacing-07;
   position: relative;
