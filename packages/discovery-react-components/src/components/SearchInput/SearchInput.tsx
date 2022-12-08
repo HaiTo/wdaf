@@ -110,6 +110,9 @@ const SearchInput: FC<SearchInputProps> = ({
   const lastWordOfValue = value.split(splitSearchQuerySelector).pop();
   const [skipFetchAutoCompletions, setSkipFetchAutoCompletions] = useState(false);
   const [focused, setFocused] = useState(false);
+  const [composing, setComposing] = useState(false);
+  const startComposing = () => setComposing(true);
+  const endComposing = () => setComposing(false);
   let focusTimeout: ReturnType<typeof setTimeout> | null = null;
 
   useEffect(() => {
@@ -215,7 +218,8 @@ const SearchInput: FC<SearchInputProps> = ({
   }, [setSearchParameters, spellingSuggestions]);
 
   const handleOnKeyUp = (evt: KeyboardEvent<EventTarget>): void => {
-    if (evt.key === 'Enter') {
+    //if (evt.keyCode === 13) { //we may need to use it
+    if (evt.key === 'Enter' && !composing) {
       searchAndBlur(value);
     }
   };
@@ -284,7 +288,9 @@ const SearchInput: FC<SearchInputProps> = ({
     >
       <div onFocus={handleOnFocus}>
         <CarbonSearchInput
-          onKeyUp={handleOnKeyUp}
+          onKeyDown={handleOnKeyUp} // may need to change the function name to handleOnKeyDown
+          onCompositionStart={startComposing}
+          onCompositionEnd={endComposing}
           onChange={handleOnChange}
           value={value}
           id={`${inputId}_input_field`}

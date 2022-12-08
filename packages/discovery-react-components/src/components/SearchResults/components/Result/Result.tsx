@@ -110,6 +110,9 @@ export const Result: React.FunctionComponent<ResultProps> = ({
     ? [get(result, bodyField)]
     : undefined;
   let displayedTextElements: SelectedResult['element'][] | null = null;
+  function implementsQueryResultPassage(arg: any): arg is DiscoveryV2.QueryResultPassage {
+    return arg !== null && !!arg.answers;
+  }
   let displayedTextElementType: SelectedResult['elementType'] = null;
   if (hasPassages) {
     displayedTexts = passageTexts;
@@ -183,7 +186,10 @@ export const Result: React.FunctionComponent<ResultProps> = ({
               !showTablesOnlyResults &&
               displayedTexts.map((displayedText, index) => {
                 const displayedTextElement = displayedTextElements?.[index];
-                const answerText = displayedTextElement?.answers?.[0].answer_text || '';
+                let answerText = '';
+                if (implementsQueryResultPassage(displayedTextElement)) {
+                  answerText = displayedTextElement?.answers?.[0].answer_text || '';
+                }
                 return (
                   <ResultElement
                     key={md5(displayedText + index)}
