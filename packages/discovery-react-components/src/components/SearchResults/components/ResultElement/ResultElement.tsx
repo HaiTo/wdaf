@@ -103,12 +103,12 @@ export const ResultElement: React.FunctionComponent<ResultElementProps> = ({
 
   return (
     <Tile>
+      {answerText && <CodeSnippet type="inline">Answer: {answerText}</CodeSnippet>}
       {dangerouslyRenderHtml ? (
         <div {...elementBodyProps} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(body) }} />
       ) : (
         <div {...elementBodyProps}>{body}</div>
       )}
-      {answerText && <CodeSnippet type="inline">Answer: {answerText}</CodeSnippet>}
       <Button
         className={searchResultContentWrapperBodyButtonClass}
         onClick={handleSelectResult(element, elementType)}

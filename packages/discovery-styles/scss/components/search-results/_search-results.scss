@@ -94,7 +94,11 @@ $result-table-fade-offset: calc(#{$result-element-max-height} - #{$result-table-
     }
 
     &:last-child {
-      pading-bottom: $spacing-05;
+      padding-bottom: $spacing-05;
+    }
+
+    button {
+      margin-bottom: $spacing-02;
     }
   }
 }

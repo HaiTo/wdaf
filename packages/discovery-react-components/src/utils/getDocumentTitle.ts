@@ -7,9 +7,9 @@ export const getDocumentTitle = (
 ): string => {
   if (document) {
     return (
+      get(document, 'extracted_metadata.filename') ||
       get(document, titleField) ||
       get(document, 'extracted_metadata.title') ||
-      get(document, 'extracted_metadata.filename') ||
       document.document_id
     );
   }
