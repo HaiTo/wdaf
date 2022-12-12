@@ -15,7 +15,7 @@ RUN cp examples/discovery-search-app/.env examples/discovery-search-app/.env.loc
 RUN yarn run build:pkgs
 # Build した成果物を再度Install
 RUN yarn install
-# RUN yarn workspace discovery-search-app run build
+RUN yarn workspace discovery-search-app run build
 
 EXPOSE 4000
 #RUN yarn run server:setup
