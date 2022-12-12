@@ -12,7 +12,8 @@ COPY . .
 
 RUN yarn install
 RUN cp examples/discovery-search-app/.env examples/discovery-search-app/.env.local
-# RUN yarn workspace discovery-search-app run build
+RUN yarn run build:pkgs
+RUN yarn workspace discovery-search-app run build
 
 EXPOSE 4000
 #RUN yarn run server:setup
