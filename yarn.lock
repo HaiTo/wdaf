@@ -2240,7 +2240,7 @@ __metadata:
 
 "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.3
-  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=a4757b&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=788009&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   dependencies:
     "@react-hook/size": ^2.1.2
     buffer: ^6.0.3
@@ -2250,7 +2250,7 @@ __metadata:
     entities: ^4.4.0
     htmlparser2: ^4.0.0
     lodash: ^4.17.21
-    mustache: ^3.1.0
+    mustache: ^4.2.0
     pdfjs-dist: 2.6.347
     react-error-boundary: ^1.2.5
     react-resize-detector: ^4.2.1
@@ -2265,7 +2265,7 @@ __metadata:
     ibm-watson: ^6.0.2
     react: ">= 16.8.0 < 18"
     react-dom: ">= 16.8.0 < 18"
-  checksum: 75936a7bee9ff6f0ac4c8c6b69b90a3b8370fa809082ee1afad5dbc5a768c57523f190434c41fc7252e6c884e8e0160907998fa282f904b1b6e70821c38611ed
+  checksum: 0f681f660bf014b33d26d6a3029d05eb744b87ad17eedc3c0ce8cb4039644cbddde3f29f00fd336f03ee418347906a51feaab366f0a24b56cc7fb747e0f24262
   languageName: node
   linkType: hard
 
@@ -2303,7 +2303,7 @@ __metadata:
     lodash: ^4.17.21
     madge: ^5.0.1
     marked: ^4.0.10
-    mustache: ^3.1.0
+    mustache: ^4.2.0
     pdfjs-dist: 2.6.347
     react-error-boundary: ^1.2.5
     react-resize-detector: ^4.2.1
@@ -2332,10 +2332,10 @@ __metadata:
 
 "@ibm-watson/discovery-styles@file:../../packages/discovery-styles::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.1
-  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=6fe442&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=52cc4a&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   peerDependencies:
     carbon-components: ">= 10.46.0 < 11"
-  checksum: b820612f2d9843a73d095ba49f0f60362d545c695c400d7b5a604239646659593971ead36c4f02fd6152be93033d40d6493cf162ace08ba55d5bc6467e0a0e84
+  checksum: fd46a2dd6bd2c86f5135736f8e0913b7c8dc8fd26d2a293317ce2ead86ea5af96fc1bdc8cf7dede6aaf820edb249f5d68331da56cbabdf8099ee2c238326e281
   languageName: node
   linkType: hard
 
@@ -5862,10 +5862,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mustache@npm:^0.8.32":
-  version: 0.8.32
-  resolution: "@types/mustache@npm:0.8.32"
-  checksum: 390fb7dc873932b9b07d8a3c09c2cf5708232ca01be71ddac8d58a145735909687f9fd661ed3ff9037f4051abf3e010f109c91baa5e704d87aad80d6cd377562
+"@types/mustache@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@types/mustache@npm:4.2.2"
+  checksum: 1fa67a519f4302c96615524be4c8248067da02ca047bae9d4c4bb79977135ac7c15dcc388e7c70b8a817b9497004d5ca5c77a155dcb096bea16d53d4cdbe75d2
   languageName: node
   linkType: hard
 
@@ -18771,12 +18771,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mustache@npm:^3.1.0":
-  version: 3.2.1
-  resolution: "mustache@npm:3.2.1"
+"mustache@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "mustache@npm:4.2.0"
   bin:
     mustache: bin/mustache
-  checksum: d008c18f870ddffc7440b3848e2d9f549a7460042e2660ea407adf0cdf6292b9dd2f32757e483d72abe1791b3341ec1fb65340510586c3757b1c3ca07ee7f354
+  checksum: 928fcb63e3aa44a562bfe9b59ba202cccbe40a46da50be6f0dd831b495be1dd7e38ca4657f0ecab2c1a89dc7bccba0885eab7ee7c1b215830da765758c7e0506
   languageName: node
   linkType: hard
 
@@ -23278,7 +23278,7 @@ __metadata:
     "@types/jest": ^24.0.18
     "@types/lodash": ^4.14.141
     "@types/md5": 2.3.2
-    "@types/mustache": ^0.8.32
+    "@types/mustache": ^4.2.2
     "@types/node": ^16.11.59
     "@types/react": ^17.0.38
     "@types/react-dom": ^17.0.11
