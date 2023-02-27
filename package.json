@@ -43,7 +43,7 @@
     "audit-ci": "^5.1.2",
     "axios": "^0.21.4",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^9.1.2",
     "doctoc": "^2.2.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.5.0",

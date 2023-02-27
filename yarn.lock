@@ -2240,7 +2240,7 @@ __metadata:
 
 "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.3
-  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=a4757b&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=6142da&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   dependencies:
     "@react-hook/size": ^2.1.2
     buffer: ^6.0.3
@@ -2265,7 +2265,7 @@ __metadata:
     ibm-watson: ^6.0.2
     react: ">= 16.8.0 < 18"
     react-dom: ">= 16.8.0 < 18"
-  checksum: 75936a7bee9ff6f0ac4c8c6b69b90a3b8370fa809082ee1afad5dbc5a768c57523f190434c41fc7252e6c884e8e0160907998fa282f904b1b6e70821c38611ed
+  checksum: f379beb39f0d740bd88333f305307d6ab5b4a5594aead79d5ec6e7f941df2313750f1b9f46c5a138b85268c034d5557cbf32b2709e1b9314ee9b3566f38b417f
   languageName: node
   linkType: hard
 
@@ -2332,10 +2332,10 @@ __metadata:
 
 "@ibm-watson/discovery-styles@file:../../packages/discovery-styles::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.1
-  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=6fe442&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=099d68&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   peerDependencies:
     carbon-components: ">= 10.46.0 < 11"
-  checksum: b820612f2d9843a73d095ba49f0f60362d545c695c400d7b5a604239646659593971ead36c4f02fd6152be93033d40d6493cf162ace08ba55d5bc6467e0a0e84
+  checksum: bd383f2d6fcc432851d8cca81cd8dc022d8458eee46eaad0893973041faaa7c7163abd1baaef4803dfd0e05e5a08bfb9455a561455978c2fdbd646294a3f80ac
   languageName: node
   linkType: hard
 
@@ -7818,6 +7818,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-loader@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "babel-loader@npm:9.1.2"
+  dependencies:
+    find-cache-dir: ^3.3.2
+    schema-utils: ^4.0.0
+  peerDependencies:
+    "@babel/core": ^7.12.0
+    webpack: ">=5"
+  checksum: f0edb8e157f9806b810ba3f2c8ca8fa489d377ae5c2b7b00c2ace900a6925641ce4ec520b9c12f70e37b94aa5366e7003e0f6271b26821643e109966ce741cb7
+  languageName: node
+  linkType: hard
+
 "babel-plugin-add-react-displayname@npm:^0.0.5":
   version: 0.0.5
   resolution: "babel-plugin-add-react-displayname@npm:0.0.5"
@@ -13046,6 +13059,17 @@ __metadata:
     make-dir: ^3.0.2
     pkg-dir: ^4.1.0
   checksum: 0f7c22b65e07f9b486b4560227d014fab1e79ffbbfbafb87d113a2e878510bd620ef6fdff090e5248bb2846d28851d19e42bfdc7c50687966acc106328e7abf1
+  languageName: node
+  linkType: hard
+
+"find-cache-dir@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "find-cache-dir@npm:3.3.2"
+  dependencies:
+    commondir: ^1.0.1
+    make-dir: ^3.0.2
+    pkg-dir: ^4.1.0
+  checksum: 1e61c2e64f5c0b1c535bd85939ae73b0e5773142713273818cc0b393ee3555fb0fd44e1a5b161b8b6c3e03e98c2fcc9c227d784850a13a90a8ab576869576817
   languageName: node
   linkType: hard
 
@@ -23291,7 +23315,7 @@ __metadata:
     audit-ci: ^5.1.2
     axios: ^0.21.4
     babel-eslint: ^10.1.0
-    babel-loader: ^8.2.3
+    babel-loader: ^9.1.2
     doctoc: ^2.2.0
     eslint: ^8.3.0
     eslint-config-prettier: ^8.5.0
