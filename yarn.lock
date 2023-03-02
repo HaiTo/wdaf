@@ -2240,13 +2240,13 @@ __metadata:
 
 "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.3
-  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=a4757b&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-react-components@file:../../packages/discovery-react-components#../../packages/discovery-react-components::hash=f667b9&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   dependencies:
     "@react-hook/size": ^2.1.2
     buffer: ^6.0.3
     classnames: ^2.2.6
     debounce: ^1.2.0
-    dompurify: ^2.0.17
+    dompurify: ^3.0.1
     entities: ^4.4.0
     htmlparser2: ^4.0.0
     lodash: ^4.17.21
@@ -2265,7 +2265,7 @@ __metadata:
     ibm-watson: ^6.0.2
     react: ">= 16.8.0 < 18"
     react-dom: ">= 16.8.0 < 18"
-  checksum: 75936a7bee9ff6f0ac4c8c6b69b90a3b8370fa809082ee1afad5dbc5a768c57523f190434c41fc7252e6c884e8e0160907998fa282f904b1b6e70821c38611ed
+  checksum: f5bbad0f327713cad07adf5e06bc61eb84e96a4ae3292c85abba93b100bbaba9c90b5631e840f38143ead7d5f3901cf0fe5961c3ac66de3cc0b7d209be403176
   languageName: node
   linkType: hard
 
@@ -2297,7 +2297,7 @@ __metadata:
     cross-env: ^7.0.3
     css-loader: ^6.7.1
     debounce: ^1.2.0
-    dompurify: ^2.0.17
+    dompurify: ^3.0.1
     entities: ^4.4.0
     htmlparser2: ^4.0.0
     lodash: ^4.17.21
@@ -2332,10 +2332,10 @@ __metadata:
 
 "@ibm-watson/discovery-styles@file:../../packages/discovery-styles::locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app":
   version: 4.1.1
-  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=6fe442&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
+  resolution: "@ibm-watson/discovery-styles@file:../../packages/discovery-styles#../../packages/discovery-styles::hash=52cc4a&locator=discovery-search-app%40workspace%3Aexamples%2Fdiscovery-search-app"
   peerDependencies:
     carbon-components: ">= 10.46.0 < 11"
-  checksum: b820612f2d9843a73d095ba49f0f60362d545c695c400d7b5a604239646659593971ead36c4f02fd6152be93033d40d6493cf162ace08ba55d5bc6467e0a0e84
+  checksum: fd46a2dd6bd2c86f5135736f8e0913b7c8dc8fd26d2a293317ce2ead86ea5af96fc1bdc8cf7dede6aaf820edb249f5d68331da56cbabdf8099ee2c238326e281
   languageName: node
   linkType: hard
 
@@ -11355,10 +11355,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^2.0.17":
-  version: 2.3.3
-  resolution: "dompurify@npm:2.3.3"
-  checksum: 947e3661681bd183aae1cd08f991b14c6aa41fd188f6c801c5e916c2dc4575bbefbaa121ed06dbe0cb0f595545527d588a44b53bfc35d1cbb898c214dc0d7930
+"dompurify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "dompurify@npm:3.0.1"
+  checksum: 19447e6d96415a8ad3a67bc9c76ffe671eb31cf7c1e0a538cbe5037c8b8b03afe144d64cf96c6e0f7fe63b83721a33b5b913394d20a85e96550e42e31f7c086b
   languageName: node
   linkType: hard
 
